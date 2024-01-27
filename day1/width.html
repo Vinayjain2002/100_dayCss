@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <!-- fixed width -->
+    <div class="w-10 bg-blue-500">this is 40px fixed width</div>
+    <div class="w-px bg-blue-500">constant width of 1px</div>
+
+    <!-- percentage width -->
+    <div class="flex w-20">
+        <div class="w-1/2 bg-blue-500">first half</div>
+        <div class="w-1/2 bg-green-500">second half</div>
+    </div>
+
+    <!-- similarly 2/5, 3/5 ie the total sum need to be 1 -->
+    <div class="w-screen">width of whole screen</div>
+    <!-- w-full means 100% of it's parents -->
+    <div class="w-full mt-5 bg-blue-500">width of full screen</div>
+
+    <div class="hover:w-full w-40 bg-green-500">when hovered</div>
+    <div class="md:w-full"></div>
+
+
+    <!-- min width -->
+
+    <div class="min-w-0">min width of the 0px</div>
+    <div class="min-w-full">min width is full Screen width</div>
+    <div class="hover:min-w-0">min width when hovered is 0px</div>
+    <div class="md:min-w-10"></div>
+
+    <!-- max width -->
+    <div class="max-w-0"></div>
+    <!-- reading width: it allocates the max  width based on the readiblity and on the basis of fontsize-->
+    <div class="text-xl max-w-prose">
+        <p>so here max-w-prose based on the font size</p>
+    </div>
+
+    <div class="max-w-sm hover:max-w-lg bg-blue-500">max width is sm</div>
+    <!-- with the breakpoints -->
+    <div class="max-w-sm md:max-w-lg">max width chaged with the breakpoints</div>
+
+
+</body>
+</html>

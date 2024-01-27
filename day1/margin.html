@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="m5">margin in all direction</div>
+    <div class="mx-0">in left and right dir</div>
+    <div class="my-0">in top and bottom</div>
+    <div class="ms-0">in inline start 0px</div>
+    <div class="me-0">in inline end</div>
+    <div class="mt-5">top</div>
+    <div class="mb-5">bottom 20px</div>
+    <div class="mr-5">right 20px</div>
+    <div class="ml-5">left 20px</div>
+    <div class="m-px">1px in all</div>
+    <div class="mx-px">left and right 1px</div>
+    <div class="my-px">top, bottom 1px</div>
+    <!-- .. -->
+
+    <!-- applying margin only when hovvered by the user -->
+    <div class="hover:mt-5">when hovered from top 20px</div>
+
+    <!-- with breakpoint -->
+    <div class="md:m-5">margin of 20px when large then 0px</div>
+
+    <!-- customizing -->
+    module.exports={
+        theme:{
+            extend:{
+                spacing{
+                    '5px': '5px'
+                }
+            }
+        }
+    }
+</body>
+</html>

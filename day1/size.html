@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <!-- could set height and width at a same time -->
+    <div class="size-0">width0 height 0</div>
+    <div class="size-px">1px width 1px height</div>
+
+    <!-- percentage sizes -->
+    <div class="size-full"></div>
+    <div class="size-auto">used when we need to remove the defined width and height at a breakpoint</div>
+    <div class="size-full md:size-auto">
+        <!-- ... -->
+      </div>
+</body>
+</html>

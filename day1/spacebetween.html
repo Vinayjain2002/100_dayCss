@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- it is used for controlling the space between the child elements -->
+    <div class="space-x-2">margin-left 0px</div>
+    <div class="space-y-0">margin right 0px</div>
+
+    <!-- we are adding the horizontal space between the elements -->
+    <div class="flex space-x-5">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </div>
+
+    <div class="flex flex-col space-y-5">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </div>
+
+    <!-- reversing the flex children order -->
+    <div class="flex flex-row-reverse space-x-5 space-x-reverse">
+        <div>01</div>
+        <div>02</div>
+        <div>03</div>
+    </div>
+
+    <!-- adding the negative x values add - before the class -->
+    <div class="flex -space-flex-x-4"></div>
+
+    <div class="hover:space-x-2"></div>
+    <!-- with the breakpoints -->
+    <div class="md:space-x-2"></div>
+</body>
+</html>
